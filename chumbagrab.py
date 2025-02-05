@@ -8,6 +8,7 @@ def MTC(x, y):
 
 # Open Chrome
 MTC(75, 1050)
+MTC(896, 1054)
 time.sleep(2)
 
 # Redirect to Chumba Casino
