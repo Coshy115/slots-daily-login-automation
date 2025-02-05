@@ -49,6 +49,10 @@ pyautogui.click(618, 824)
 pyautogui.click(853, 816)
 pyautogui.click(1097, 808)
 pyautogui.click(1323, 670)
-
 time.sleep(2)
 pyautogui.click(938, 484)
+time.sleep(5)
+
+pyautogui.hotkey('ctrl', 'w')
+print("Lucky Land Grab Complete")
+input()
