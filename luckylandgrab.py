@@ -10,12 +10,20 @@ def image_path(image_name):
 # Login Details
 email = "[YOUR EMAIL]"
 password = "[YOUR PASSWORD]"
+<<<<<<< HEAD
 
 # Open Chrome
 chrome_location = pyautogui.locateCenterOnScreen(image_path("chrome.png"), grayscale=True, confidence=0.8)
 pyautogui.click(chrome_location)
 time.sleep(2)
 
+=======
+
+# Open Chrome
+chrome_location = pyautogui.locateCenterOnScreen(image_path("chrome.png"), grayscale=True, confidence=0.8)
+pyautogui.click(chrome_location)
+
+>>>>>>> de14b865222a2c3dbef2c53fd601315ce5fa327e
 # Go to Lucky Land Slots
 pyautogui.hotkey('ctrl', 't')
 pyautogui.write("https://luckylandslots.com/loader")
@@ -51,5 +59,8 @@ pyautogui.click(618, 824)
 pyautogui.click(853, 816)
 pyautogui.click(1097, 808)
 pyautogui.click(1323, 670)
+<<<<<<< HEAD
 time.sleep(2)
 pyautogui.click(938, 484)
+=======
+>>>>>>> de14b865222a2c3dbef2c53fd601315ce5fa327e
