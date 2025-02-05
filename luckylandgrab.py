@@ -1,5 +1,3 @@
-#!/usr/bin/python1.12.2
-
 import pyautogui
 import time
 from pathlib import Path
@@ -15,10 +13,6 @@ password = "[YOUR PASSWORD]"
 chrome_location = pyautogui.locateCenterOnScreen(image_path("chrome.png"), grayscale=True, confidence=0.8)
 pyautogui.click(chrome_location)
 time.sleep(2)
-
-# Open Chrome
-chrome_location = pyautogui.locateCenterOnScreen(image_path("chrome.png"), grayscale=True, confidence=0.8)
-pyautogui.click(chrome_location)
 
 # Go to Lucky Land Slots
 pyautogui.hotkey('ctrl', 't')
