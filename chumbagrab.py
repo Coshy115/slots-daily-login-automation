@@ -3,12 +3,12 @@ import time
 
 # Move Then Click
 def MTC(x, y):
-    pyautogui.moveTo(x, y)
+    pyautogui.moveTo(x, y, duration=1)
     pyautogui.click()
 
 # Open Chrome
-MTC(75, 1050, duration=1)
-MTC(896, 1054, duration=1)
+MTC(75, 1050)
+MTC(896, 1054)
 time.sleep(2)
 
 # Redirect to Chumba Casino
@@ -19,17 +19,17 @@ pyautogui.press("enter")
 time.sleep(5)
 
 # Log in
-MTC(1363, 153, duration=1)
+MTC(1363, 153)
 time.sleep(2)
-MTC(280, 557, duration=1)
+MTC(280, 557)
 time.sleep(5)
-MTC(1327, 158, duration=1)
+MTC(1327, 158)
 
 time.sleep(1)
-MTC(970, 149, duration=1)
-MTC(1748, 148, duration=1)
-MTC(1186, 234, duration=1)
-MTC(967, 934, duration=1)
+MTC(970, 149)
+MTC(1748, 148)
+MTC(1186, 234)
+MTC(967, 934)
 
 print("Process Complete")
 input()
