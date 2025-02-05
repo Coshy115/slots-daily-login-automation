@@ -6,8 +6,8 @@ def image_path(image_name):
     return str(Path(__file__).parent / "Images" / "luckylandgrab" / image_name)
 
 # Login Details
-email = "codydls8988@gmail.com"
-password = "**BlueFish11**"
+email = "[YOUR EMAIL]"
+password = "[YOUR PASSWORD]"
 
 # Open Chrome
 chrome_location = pyautogui.locateCenterOnScreen(image_path("chrome.png"), grayscale=True, confidence=0.8)
