@@ -20,7 +20,7 @@ time.sleep(5)
 
 # Log in
 MTC(1363, 153)
-time.sleep(2)
+time.sleep(5)
 MTC(280, 557)
 time.sleep(5)
 MTC(1327, 158)
@@ -31,5 +31,4 @@ MTC(1748, 148)
 MTC(1186, 234)
 MTC(967, 934)
 
-print("Process Complete")
 input()

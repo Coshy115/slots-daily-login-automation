@@ -1,19 +1,55 @@
+#!/usr/bin/python1.12.2
+
 import pyautogui
 import time
+from pathlib import Path
 
-# Move Then Click
-def MTC(x, y):
-    pyautogui.moveTo(x, y)
-    pyautogui.click()
+def image_path(image_name):
+    return str(Path(__file__).parent / "Images" / "luckylandgrab" / image_name)
 
-# Open Chrome in Taskbar
-MTC(75, 1050)
+# Login Details
+email = "[YOUR EMAIL]"
+password = "[YOUR PASSWORD]"
+
+# Open Chrome
+chrome_location = pyautogui.locateCenterOnScreen(image_path("chrome.png"), grayscale=True, confidence=0.8)
+pyautogui.click(chrome_location)
 time.sleep(2)
 
-# Redirect to LuckyLand Slots
-pyautogui.hotkey("ctrl", "n")
-time.sleep(0.5)
+# Go to Lucky Land Slots
+pyautogui.hotkey('ctrl', 't')
 pyautogui.write("https://luckylandslots.com/loader")
-pyautogui.press("enter")
-time.sleep(5)
+pyautogui.hotkey('enter')
+time.sleep(3)
 
+# Log in if necessary
+try:
+    login_location = pyautogui.locateCenterOnScreen(image_path("login.png"), grayscale=True, confidence=0.8)
+    if login_location:
+        pyautogui.moveTo(login_location, duration=1)
+        pyautogui.click(login_location)
+    time.sleep(1)
+    pyautogui.write(email, interval=0.05)
+    passfield_location = pyautogui.locateCenterOnScreen(image_path("passfield.png"), grayscale=True, confidence=0.8)
+    if passfield_location:
+        pyautogui.moveTo(passfield_location, duration=1)
+        pyautogui.click()
+        pyautogui.write(password, interval=0.05)
+        login2_location = pyautogui.locateCenterOnScreen(image_path("login2.png"), grayscale=True, confidence=0.8)
+        if login2_location:
+            pyautogui.moveTo(login2_location, duration=1)
+            pyautogui.click()
+except pyautogui.ImageNotFoundException:
+    pass
+
+# Collect Daily Bonus
+time.sleep(5)
+pyautogui.click(615, 595)
+pyautogui.click(853, 588)
+pyautogui.click(1092, 586)
+pyautogui.click(618, 824)
+pyautogui.click(853, 816)
+pyautogui.click(1097, 808)
+pyautogui.click(1323, 670)
+time.sleep(2)
+pyautogui.click(938, 484)
