@@ -23,8 +23,8 @@ def pesky_popups(x, y):
 def luckylandslots():
 
     # Login Details
-    email = "codydls8988@gmail.com"
-    password = "**BlueFish11**"
+    email = "[email]"
+    password = "[password]"
 
     open_chrome()
 
@@ -112,6 +112,7 @@ def playfameslots():
     pesky_popups(1236, 185)
     pyautogui.click(1715, 148)
     pesky_popups(1236, 185)
+    pesky_popups(1236, 185)
 
     # Collect Daily Rewards
     pyautogui.click(1472, 527)
@@ -139,6 +140,8 @@ def mcluckslots():
     pyautogui.click(1505, 514)
     time.sleep(1)
     pyautogui.click(1373, 562)
+    time.sleep(1)
+    pyautogui.click(962, 724)
     time.sleep(2)
 
     # Close tab
