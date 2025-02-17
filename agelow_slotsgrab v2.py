@@ -4,12 +4,11 @@ import os
 
 def warning():
     # Warns user of impending script execution
-    print("Warning: Automation script will take control of your mouse and keyboard in approximately 10 minutes:")
-    print("\nProgress Bar:")
+    print("Warning: Automation script will take control of your mouse and keyboard in approximately 10 minutes:\n")
     for i in range(1, 101):
         print(f"\r|{i * '█'}{(100 - i) * ' '}| {i}/100", end="    ")
-        time.sleep(6)
-    print("\nScript executing now...")
+        time.sleep(0.2)
+    print("\n\nScript executing now...\n\n")
 
 def pesky_popups(x, y):
     # Close popups
@@ -73,7 +72,7 @@ def McLuck():
 warning()
 
 # Open Chrome
-os.system("start /MAX chrome")
+os.system("start chrome --start-fullscreen")
 time.sleep(2)
 
 # Execute tasks
