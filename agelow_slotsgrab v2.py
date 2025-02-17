@@ -7,7 +7,7 @@ def warning():
     print("Warning: Automation script will take control of your mouse and keyboard in approximately 10 minutes:\n")
     for i in range(1, 101):
         print(f"\r|{i * '█'}{(100 - i) * ' '}| {i}/100", end="    ")
-        time.sleep(0.2)
+        time.sleep(6)
     print("\n\nScript executing now...\n\n")
 
 def pesky_popups(x, y):
