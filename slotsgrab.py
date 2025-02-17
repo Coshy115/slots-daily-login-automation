@@ -1,3 +1,8 @@
+################################################
+Age requirement went up, so this is outdated :/
+################################################
+
+
 import pyautogui
 import time
 from pathlib import Path
@@ -17,7 +22,7 @@ def open_chrome():
 def pesky_popups(x, y):
 
     time.sleep(3)
-    pyautogui.click(x, y, duration=0.25, clicks = 5, interval=0.25)
+    pyautogui.click(x, y, duration=0.25, clicks = 10, interval=0.25)
     time.sleep(3)
 
 def luckylandslots():
