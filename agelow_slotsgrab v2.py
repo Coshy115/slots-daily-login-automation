@@ -1,3 +1,4 @@
+# Python 3.12.2
 import pyautogui
 import time
 import os
@@ -8,7 +9,7 @@ def warning():
     for i in range(1, 101):
         print(f"\r|{i * '█'}{(100 - i) * ' '}| {i}/100", end="    ")
         time.sleep(6)
-    print("\n\nScript executing now...\n\n")
+    print("\nScript executing now...\n")
 
 def pesky_popups(x, y):
     # Close popups
@@ -71,8 +72,12 @@ def McLuck():
 # Warning of impending script execution
 warning()
 
-# Open Chrome
-os.system("start chrome --start-fullscreen")
+# Open Chrome and maximize window
+os.system("start chrome")
+time.sleep(3)
+pyautogui.hotkey('alt', 'space')
+time.sleep(1)
+pyautogui.press('x')
 time.sleep(2)
 
 # Execute tasks
