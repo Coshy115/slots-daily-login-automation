@@ -8,7 +8,7 @@ def warning():
     print("Warning: Automation script will take control of your mouse and keyboard in approximately 10 minutes:\n")
     for i in range(1, 101):
         print(f"\r|{i * '█'}{(100 - i) * ' '}| {i}/100", end="    ")
-        time.sleep(6)
+        time.sleep(0.1)
     print("\nScript executing now...\n")
 
 def pesky_popups(x, y):
@@ -54,15 +54,19 @@ def McLuck():
     time.sleep(2)
 
     # Scroll to daily bonus
-    pyautogui.click(1505, 514)
+    pyautogui.click(1505, 536)
     time.sleep(5)
 
     # Claim button
-    pyautogui.click(1373, 562)
+    pyautogui.click(1373, 582)
     time.sleep(5)
 
-    # Collect daily bonus
-    pyautogui.click(962, 724)
+    # Claim button
+    pyautogui.click(962, 777)
+    time.sleep(5)
+
+    # Captcha
+    pyautogui.click(835, 782)
     time.sleep(5)
 
     # Close tab
