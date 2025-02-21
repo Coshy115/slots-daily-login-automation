@@ -115,7 +115,7 @@ pyautogui.press('x')
 time.sleep(2)
 
 # Execute tasks
-#PlayFame()
+PlayFame()
 McLuck()
 
 # Close Chrome
