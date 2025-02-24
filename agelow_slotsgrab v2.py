@@ -20,7 +20,7 @@ def PlayFame():
     pyautogui.hotkey('ctrl', 't')
     pyautogui.write("https://www.playfame.com/lobby")
     pyautogui.press('enter')
-    time.sleep(10)
+    time.sleep(20)
 
     # Policy Update
     pyautogui.click(842, 628)
@@ -65,7 +65,7 @@ def McLuck():
     pyautogui.hotkey('ctrl', 't')
     pyautogui.write("https://www.mcluck.com/home")
     pyautogui.press('enter')
-    time.sleep(10)
+    time.sleep(20)
 
     # Policy Update
     pyautogui.click(956, 659)
@@ -92,11 +92,11 @@ def McLuck():
     time.sleep(5)
 
     # Claim button
-    pyautogui.click(965, 725)
+    pyautogui.click(965, 778)
     time.sleep(5)
 
     # Captcha
-    pyautogui.click(835, 730)
+    pyautogui.click(835, 781)
     time.sleep(5)
 
     # Close tab
